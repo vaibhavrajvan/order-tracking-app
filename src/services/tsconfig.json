@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                       // Specify your target ECMAScript version
+      "module": "ESNext",                    // Specify the module system (ESNext for modern ES modules)
+      "jsx": "react",                        // Enable React JSX
+      "strict": true,                        // Enable strict type checking
+      "esModuleInterop": true,               // Enable compatibility with ES module imports
+      "skipLibCheck": true,                  // Skip type checking of declaration files in node_modules
+      "forceConsistentCasingInFileNames": true, // Enforce consistent file naming
+      "allowJs": true,                       // Allow JavaScript files to be mixed with TypeScript
+      "noEmit": true,                        // Prevent TypeScript from emitting output files
+      "isolatedModules": true,               // Enable isolated module loading for faster builds
+      "resolveJsonModule": true,             // Allow importing JSON files
+      "moduleResolution": "node",            // Specify module resolution strategy
+      "strictNullChecks": true,              // Enable strict null checks
+      "baseUrl": "./src",                    // Specify the base URL for module resolution
+      "paths": {
+        "@/*": ["*"]
+      }
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx"],  // Specify the source files to include in compilation
+    "exclude": ["node_modules"]                    // Specify files or directories to exclude from compilation
+  }
+  
